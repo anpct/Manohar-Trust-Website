@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manohar Trust</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="{% static 'main/TheEvent/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<div style="margin:auto;">
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="{% static 'main/TheEvent/img/logo.png' %}" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{ instance.title }}</h4>
+    <p class="card-text">{{ instance.content }}</p>
+    ON <p class="card-text">{{ instance.event_date }}</p>
+    AT <p class="card-text">{{ instance.location }}</p>
+  </div>
+</div>
+</div>
+ <script src="{% static 'main/TheEvent/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
